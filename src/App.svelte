@@ -1,5 +1,12 @@
 <script lang="ts">
   import Counter from "./lib/Counter.svelte";
+  import CounterProp from "./lib/CounterProp.svelte";
+
+  const obj = {
+    power: 43,
+    name: "Don",
+    value: "go",
+  };
 </script>
 
 <main class="container">
@@ -7,6 +14,11 @@
 
   <div>
     <Counter />
+  </div>
+
+  <div>
+    <CounterProp />
+    <CounterProp {...obj} />
   </div>
 </main>
 
