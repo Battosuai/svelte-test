@@ -1,6 +1,7 @@
 <script lang="ts">
   import Counter from "./lib/Counter.svelte";
   import CounterProp from "./lib/CounterProp.svelte";
+  import Condition from "./lib/Condition.svelte";
 
   const obj = {
     power: 43,
@@ -19,6 +20,7 @@
   <div>
     <CounterProp />
     <CounterProp {...obj} />
+    <Condition />
   </div>
 </main>
 
