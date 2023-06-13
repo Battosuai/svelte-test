@@ -4,6 +4,7 @@
   import Condition from "./lib/Condition.svelte";
   import Events from "./lib/Events.svelte";
   import Inner from "./lib/Inner.svelte";
+  import Binding from "./lib/Binding.svelte";
 
   const obj = {
     power: 43,
@@ -18,6 +19,10 @@
 
 <main class="container">
   <h1>Vite + Svelte</h1>
+
+  <div>
+    <Binding />
+  </div>
 
   <div>
     <Counter />
