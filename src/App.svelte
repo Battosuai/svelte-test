@@ -5,6 +5,7 @@
   import Events from "./lib/Events.svelte";
   import Inner from "./lib/Inner.svelte";
   import Binding from "./lib/Binding.svelte";
+  import Lifecycles from "./lib/Lifecycles.svelte";
 
   const obj = {
     power: 43,
@@ -20,6 +21,9 @@
 <main class="container">
   <h1>Vite + Svelte</h1>
 
+  <div>
+    <Lifecycles />
+  </div>
   <div>
     <Binding />
   </div>
