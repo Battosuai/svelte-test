@@ -6,6 +6,7 @@
   import Inner from "./lib/Inner.svelte";
   import Binding from "./lib/Binding.svelte";
   import Lifecycles from "./lib/Lifecycles.svelte";
+  import StorePractise from "./lib/StorePractise.svelte";
 
   const obj = {
     power: 43,
@@ -22,30 +23,34 @@
   <h1>Vite + Svelte</h1>
 
   <div>
-    <Lifecycles />
-  </div>
-  <div>
-    <Binding />
+    <StorePractise />
   </div>
 
   <div>
-    <Counter />
+    <!-- <Lifecycles /> -->
+  </div>
+  <div>
+    <!-- <Binding /> -->
   </div>
 
   <div>
-    <CounterProp />
+    <!-- <Counter /> -->
+  </div>
+
+  <div>
+    <!-- <CounterProp />
     <CounterProp {...obj} />
-    <Condition />
+    <Condition /> -->
   </div>
 
   <div>
-    <Events />
+    <!-- <Events /> -->
   </div>
 
   <!-- on:message event directive without a value means 'forward all message events'. -->
   <!-- ex: <Inner on:message/> -->
   <!-- it works for dom event too -->
-  <Inner on:message={handleMessage} />
+  <!-- <Inner on:message={handleMessage} /> -->
 </main>
 
 <style>
